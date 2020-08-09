@@ -1,1 +1,18 @@
-show.erb
+<h1>Name: <%=@pet.name%>
+
+<h2>Owner: <%=@pet.owner.name%><br>
+</h2>
+<% fullarr=[]%>
+<%@pet.owner.pets.each do |pet|%>
+<%fullarr << pet %>
+ <% if fullarr.count > 1 %>
+ <h3><label>Other Pet Sibs</label></h3>
+ <% @pet.owner.pets.each do |pet| %>
+
+<li><h3><%=pet.name if pet.name!=@pet.name%>
+</h3></li>
+<%end%>
+<%end%>
+<%end%>
+
+
