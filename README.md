@@ -279,13 +279,7 @@ Now our whole form should look something like this:
   <% end %>
   <br>
 
-  <h3>New Pet</h3>
-  <label>Pet Name: </label>
-  <br>
-  <input type="text" name="pet[name]" id="pet_name"></input>
-  <br><br>
-
-  <input type="submit" value="Create Owner">
+  
 </form>
 
 ```
